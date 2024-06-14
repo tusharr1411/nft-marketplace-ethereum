@@ -155,7 +155,7 @@ Before builidng your subgraph and deploying it to subgraph studio make sure you 
 
 
 * follow this [Quick Start](https://thegraph.com/docs/en/quick-start/) to initialize, create, and deploy your subgraph to Subgraph Studio.
-* After creating you subgraph just copy the code from [`schema.graphql`](link) and [`src/nft-market-place.ts`]() and paste to the respective files in your subgraph before deploying it to subgraph studio.
+* After creating you subgraph just copy the code from [`schema.graphql`](https://github.com/tusharr1411/LYNC-Solidity-Intern-Blockchain-Developer-Task?tab=readme-ov-file) and [`subgraph-indexer/src/nft-market-place.ts`](https://github.com/tusharr1411/LYNC-Solidity-Intern-Blockchain-Developer-Task/blob/main/nft-marketplace-frontend/subgraph-indexer/src/nft-market-place.ts) and paste to the respective files in your subgraph before deploying it to subgraph studio.
 
 <br>
 

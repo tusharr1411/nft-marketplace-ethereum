@@ -1,19 +1,4 @@
 
-1. Home Page: default
-    1. Show all listed NFTs(Active) : On click route to the NFT detail page
-2. Your Listings: I
-    1. Show NFTs listed by User : On click route to the NFT detail page
-3. List NFT : Liste NFTs with nftAddress, tokenId, Price
-4. Balance Page : User can withdraw their proceeds
-5. NFT  Detail Page : 
-    1. If User is Seller of that NFT - then show Updte Listing, Cancel Listing, Add Arbiter and/or Remove Arbiter buttons
-    2. If User is Arbiter of the NFT - then show Buy NFT and Raise Dispute Button
-    3. Show NFT Image with details
-
-
-
-<br> <br> <br> 
-
 
 # frontend-graph  [NextJS]
 
