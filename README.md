@@ -4,7 +4,7 @@
 
 An open decentralized NFT Marketplace built on ethereum (sepolia) smartcontract. It is an open platform where users can buy and sell their NFTs
 
-#### Demo : [Link](<https://lync-nft-marketplace.vercel.app/)>)
+#### Demo : [Link](https://lync-nft-marketplace.vercel.app/)
 
 #### Get some sepolia ETH : [Chainlink faucet](https://faucets.chain.link/sepolia) or [Alchemy faucet](https://www.alchemy.com/faucets/ethereum-sepolia)
 
