@@ -1,0 +1,15 @@
+{
+    "tabWidth": 4,
+    "printWidth": 130,
+    "semi": true,
+    "singleQuote": false,
+    "useTabs": false,
+    "overrides": [
+        {
+        "files": ".ts",
+        "options": {
+            "semi": true
+        }
+        }
+    ]
+}

@@ -1,0 +1,115 @@
+type ActiveItem @entity {
+  id: ID! # ! means must have an ID
+  buyer: Bytes! # 0x0000... if no one has bought yet
+  seller: Bytes! # the one who listed NFT
+  nftAddress: Bytes!
+  tokenId: BigInt!
+  price: BigInt # can be null
+  arbiter: Bytes!
+  disputed: Boolean!
+  arbiterSetTimestamp: BigInt!
+}
+
+type ArbiterAdded @entity {
+  id: ID!
+  arbiter: Bytes! # address
+  nftAddress: Bytes! # address
+  tokenId: BigInt! # uint256
+  arbiterSetTimestamp: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ArbiterRemoved @entity {
+  id: ID!
+  nftAddress: Bytes! # address
+  tokenId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type DisputeRaised @entity {
+  id: ID!
+  arbiter: Bytes! # address
+  nftAddress: Bytes! # address
+  tokenId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ItemBought @entity {
+  id: ID!
+  buyer: Bytes! # address
+  nftAddress: Bytes! # address
+  tokenId: BigInt! # uint256
+  price: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ItemCanceled @entity {
+  id: ID!
+  seller: Bytes! # address
+  nftAddress: Bytes! # address
+  tokenId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ItemListed @entity {
+  id: ID!
+  seller: Bytes! # address
+  nftAddress: Bytes! # address
+  tokenId: BigInt! # uint256
+  price: BigInt! # uint256
+  arbiter: Bytes! # address
+  disputed: Boolean! # bool
+  arbiterSetTimestamp: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+
+
+
+type RequestPrice @entity(immutable: true) {
+  id: Bytes!
+  requestId: Bytes! # bytes32
+  ethPriceInUsd: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ChainlinkCancelled @entity(immutable: true) {
+  id: Bytes!
+  NftMarketPlace_id: Bytes! # bytes32
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ChainlinkFulfilled @entity(immutable: true) {
+  id: Bytes!
+  NftMarketPlace_id: Bytes! # bytes32
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ChainlinkRequested @entity(immutable: true) {
+  id: Bytes!
+  NftMarketPlace_id: Bytes! # bytes32
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+
+

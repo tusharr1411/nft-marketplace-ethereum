@@ -1,0 +1,53 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: NftMarketPlace
+    network: sepolia
+    source:
+      address: "0x0c442708725a1792f457B45f25291DB0cE2Bd54E"
+      abi: NftMarketPlace
+      startBlock: 6099663
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - ArbiterAdded
+        - ArbiterRemoved
+        - ChainlinkCancelled
+        - ChainlinkFulfilled
+        - ChainlinkRequested
+        - DisputeRaised
+        - ItemBought
+        - ItemCanceled
+        - ItemListed
+        - RequestPrice
+      abis:
+        - name: NftMarketPlace
+          file: ./abis/NftMarketPlace.json
+      eventHandlers:
+        - event: ArbiterAdded(indexed address,indexed address,indexed uint256,uint256)
+          handler: handleArbiterAdded
+        - event: ArbiterRemoved(address,uint256)
+          handler: handleArbiterRemoved
+        - event: ChainlinkCancelled(indexed bytes32)
+          handler: handleChainlinkCancelled
+        - event: ChainlinkFulfilled(indexed bytes32)
+          handler: handleChainlinkFulfilled
+        - event: ChainlinkRequested(indexed bytes32)
+          handler: handleChainlinkRequested
+        - event: DisputeRaised(indexed address,indexed address,indexed uint256)
+          handler: handleDisputeRaised
+        - event: ItemBought(indexed address,indexed address,indexed uint256,uint256)
+          handler: handleItemBought
+        - event: ItemCanceled(indexed address,indexed address,indexed uint256)
+          handler: handleItemCanceled
+        - event: ItemListed(indexed address,indexed address,indexed uint256,uint256,address,bool,uint256)
+          handler: handleItemListed
+        - event: RequestPrice(indexed bytes32,uint256)
+          handler: handleRequestPrice
+      file: ./src/nft-market-place.ts
