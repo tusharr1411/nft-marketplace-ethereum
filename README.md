@@ -1,16 +1,16 @@
-`#Ethereum` `#SEPOLIA` `#NEXT.JS` `SUBGRAPH`
+`#Ethereum` `#SEPOLIA` `#NEXT.JS` `#SUBGRAPH` `
 
 # NFT Marketplace
 
 An open decentralized NFT Marketplace built on ethereum (sepolia) smartcontract. It is an open platform where users can buy and sell their NFTs
 
-#### Demo : [Link](https://lync-nft-marketplace.vercel.app/)
+#### Demo : [Link](https://nft-marketplace-ethereum.vercel.app/)
 
 #### Get some sepolia ETH : [Chainlink faucet](https://faucets.chain.link/sepolia) or [Alchemy faucet](https://www.alchemy.com/faucets/ethereum-sepolia)
 
 
 ## Project Description
-The user can access the marketplace using this [Link](https://lync-nft-marketplace.vercel.app/), and he must have the Metamask or any other wallet installed. This interface, built with next.js, relies on the Moralis library to communicate with the smart contracts through Metamask. The data reflected on the front-end application is fetched from the marketplace contract events which are indexed using subgraph-indexer.
+The user can access the marketplace using this [Link](https://nft-marketplace-ethereum.vercel.app/), and he must have the Metamask or any other wallet installed. This interface, built with next.js, relies on the Moralis library to communicate with the smart contracts through Metamask. The data reflected on the front-end application is fetched from the marketplace contract events which are indexed using subgraph-indexer.
 
 
 
