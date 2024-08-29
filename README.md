@@ -69,16 +69,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 
 ```
-$ git clone https://github.com/tusharr1411 LYNC-Solidity-Intern-Blockchain-Developer-Task
+$ git clone https://github.com/tusharr1411 nft-marketplace-ethereum
 ```
 
 <br>
 
 Follow these instructions to setup the projects:
-* First Setup the & deploy the smartcontract using  [`nft-marketplace-backend`](https://github.com/tusharr1411/LYNC-Solidity-Intern-Blockchain-Developer-Task/tree/main/nft-marketplace-backend). Follow this [`README.md`](https://github.com/tusharr1411/LYNC-Solidity-Intern-Blockchain-Developer-Task/blob/main/nft-marketplace-backend/README.md ).
-* Then setup your frontend using [`nft-marketplace-frontend`](https://github.com/tusharr1411/LYNC-Solidity-Intern-Blockchain-Developer-Task/tree/main/nft-marketplace-frontend) folder.
-    * Before starting next app you need to build and deploy to subgraph studio using `nft-marketplace-backend/subgraph-indexer`. Follow this [`README.md`](https://github.com/tusharr1411/LYNC-Solidity-Intern-Blockchain-Developer-Task/blob/main/nft-marketplace-frontend/subgraph-indexer/README.md ).
-    * start your frontend app using `nft-marketplace-backend/frontend-graph` folder. Follow this [`README.md`](https://github.com/tusharr1411/LYNC-Solidity-Intern-Blockchain-Developer-Task/blob/main/nft-marketplace-frontend/frontend-graph/README.md).
+* First Setup the & deploy the smartcontract using  [`nft-marketplace-backend`](https://github.com/tusharr1411/nft-marketplace-ethereum/tree/main/nft-marketplace-backend). Follow this [`README.md`](https://github.com/tusharr1411/nft-marketplace-ethereum/blob/main/nft-marketplace-backend/README.md ).
+* Then setup your frontend using [`nft-marketplace-frontend`](https://github.com/tusharr1411/nft-marketplace-ethereum/tree/main/nft-marketplace-frontend) folder.
+    * Before starting next app you need to build and deploy to subgraph studio using `nft-marketplace-backend/subgraph-indexer`. Follow this [`README.md`](https://github.com/tusharr1411/nft-marketplace-ethereum/blob/main/nft-marketplace-frontend/subgraph-indexer/README.md ).
+    * start your frontend app using `nft-marketplace-backend/frontend-graph` folder. Follow this [`README.md`](https://github.com/tusharr1411/nft-marketplace-ethereum/blob/main/nft-marketplace-frontend/frontend-graph/README.md).
 
 <br>
 
@@ -97,12 +97,12 @@ Follow these instructions to setup the projects:
 ## 1. nft-marketplace-backend [Hardhatprojet]
 
 
-After cloning the [`https://github.com/tusharr1411/LYNC-Solidity-Intern-Blockchain-Developer-Task`](https://github.com/tusharr1411/LYNC-Solidity-Intern-Blockchain-Developer-Task) repo locally.
+After cloning the [`https://github.com/tusharr1411/nft-marketplace-ethereum`](https://github.com/tusharr1411/nft-marketplace-ethereum) repo locally.
 
 navigate to the backend repo using : 
 
 ```
-$ cd LYNC-Solidity-Intern-Blockchain-Developer-Task/nft-marketplace-backend
+$ cd nft-marketplace-ethereum/nft-marketplace-backend
 ```
 
 
@@ -130,7 +130,7 @@ $ yarn hardhat deploy
 
 Tadda... Your marketplace contract and a basic NFT will be deployed and varified on the etherscan. And also the frontend constants will be written in the frontend directory.
 
-You can interact with `NftMarketplace.sol` smartcontract on [sepolia etherscan](https://sepolia.etherscan.io/) using it's address or just build your own frontend app using this [`README.md`](https://github.com/tusharr1411/LYNC-Solidity-Intern-Blockchain-Developer-Task/blob/main/nft-marketplace-frontend/frontend-graph/README.md)
+You can interact with `NftMarketplace.sol` smartcontract on [sepolia etherscan](https://sepolia.etherscan.io/) using it's address or just build your own frontend app using this [`README.md`](https://github.com/tusharr1411/nft-marketplace-ethereum/blob/main/nft-marketplace-frontend/frontend-graph/README.md)
 
 
 
@@ -155,7 +155,7 @@ Before builidng your subgraph and deploying it to subgraph studio make sure you 
 
 
 * follow this [Quick Start](https://thegraph.com/docs/en/quick-start/) to initialize, create, and deploy your subgraph to Subgraph Studio.
-* After creating you subgraph just copy the code from [`schema.graphql`](https://github.com/tusharr1411/LYNC-Solidity-Intern-Blockchain-Developer-Task?tab=readme-ov-file) and [`subgraph-indexer/src/nft-market-place.ts`](https://github.com/tusharr1411/LYNC-Solidity-Intern-Blockchain-Developer-Task/blob/main/nft-marketplace-frontend/subgraph-indexer/src/nft-market-place.ts) and paste to the respective files in your subgraph before deploying it to subgraph studio.
+* After creating you subgraph just copy the code from [`schema.graphql`](https://github.com/tusharr1411/nft-marketplace-ethereum?tab=readme-ov-file) and [`subgraph-indexer/src/nft-market-place.ts`](https://github.com/tusharr1411/nft-marketplace-ethereum/blob/main/nft-marketplace-frontend/subgraph-indexer/src/nft-market-place.ts) and paste to the respective files in your subgraph before deploying it to subgraph studio.
 
 <br>
 
@@ -172,7 +172,7 @@ Before builidng your subgraph and deploying it to subgraph studio make sure you 
 ## 3 frontend-graph  [NextJS]
 
 
-Note : Before getting start make sure you have deployed your NftMarketplace contract using this [`README.md`](https://github.com/tusharr1411/LYNC-Solidity-Intern-Blockchain-Developer-Task/blob/main/nft-marketplace-backend/README.md) and have build your and deployed subgraph for event listening using [`subgraph-indexer`](https://github.com/tusharr1411/LYNC-Solidity-Intern-Blockchain-Developer-Task/tree/main/nft-marketplace-frontend/subgraph-indexer) folder ( use this [`README.md`](https://github.com/tusharr1411/LYNC-Solidity-Intern-Blockchain-Developer-Task/blob/main/nft-marketplace-frontend/subgraph-indexer/README.md))
+Note : Before getting start make sure you have deployed your NftMarketplace contract using this [`README.md`](https://github.com/tusharr1411/nft-marketplace-ethereum/blob/main/nft-marketplace-backend/README.md) and have build your and deployed subgraph for event listening using [`subgraph-indexer`](https://github.com/tusharr1411/nft-marketplace-ethereum/tree/main/nft-marketplace-frontend/subgraph-indexer) folder ( use this [`README.md`](https://github.com/tusharr1411/nft-marketplace-ethereum/blob/main/nft-marketplace-frontend/subgraph-indexer/README.md))
 
 
 
@@ -180,7 +180,7 @@ Note : Before getting start make sure you have deployed your NftMarketplace cont
 Navigate to the frontend-graph repo using : 
 
 ```
-$ cd LYNC-Solidity-Intern-Blockchain-Developer-Task/nft-marketplace-frontend/frontend-graph
+$ cd nft-marketplace-ethereum/nft-marketplace-frontend/frontend-graph
 ```
 
 
@@ -198,7 +198,7 @@ $ npm install
 
 Then rename the `example.env` to `.env` and add the values of `.env` variables ( Not needed actually)
 
-And change this line in [`_app.js`](https://github.com/tusharr1411/LYNC-Solidity-Intern-Blockchain-Developer-Task/blob/2302b4e01a0b52734bb8191b455c5ca57437d502/nft-marketplace-frontend/frontend-graph/pages/_app.js#L10) according to your subgraph api link.
+And change this line in [`_app.js`](https://github.com/tusharr1411/nft-marketplace-ethereum/blob/2302b4e01a0b52734bb8191b455c5ca57437d502/nft-marketplace-frontend/frontend-graph/pages/_app.js#L10) according to your subgraph api link.
 
 ```js
 uri: "https://api.studio.thegraph.com/query/66907/lync-nft-marketplace-2024/version/latest",
